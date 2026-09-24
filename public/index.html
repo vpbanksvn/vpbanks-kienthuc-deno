@@ -18,11 +18,19 @@ em,figcaption{color:#5b6570}
 blockquote{margin:1.4em 0;padding:.8em 1em;border-left:3px solid #d7dbe0;background:#f7f8fa}
 small{color:#5b6570}
 hr{border:0;border-top:1px solid #e6e9ec;margin:2em 0}
+table{width:100%;border-collapse:collapse;margin:1.2em 0;font-size:.94em}
+th,td{border:1px solid #e0e4e8;padding:.55em .7em;text-align:left;vertical-align:top}
+th{background:#f4f6f8;font-weight:600}
+.tbl{overflow-x:auto}
+ul.kw{columns:2;column-gap:2em;padding-left:1.2em}
+@media (max-width:600px){ul.kw{columns:1}}
 @media (max-width:600px){body{padding:20px 16px 48px;font-size:16px}h1{font-size:1.55rem}}
 @media (prefers-color-scheme:dark){
   body{background:#15171a;color:#e6e8ea}
   a{color:#7aa7ff}
   blockquote{background:#1d2024;border-left-color:#333}
+  th{background:#20242a}
+  th,td{border-color:#2e3238}
   em,figcaption,small{color:#9aa3ad}
   hr{border-top-color:#2a2e33}
 }
@@ -84,90 +92,31 @@ hr{border:0;border-top:1px solid #e6e9ec;margin:2em 0}
 </script>
 </section>
 <section>
-<h2>Bảng giá và công cụ giao dịch</h2>
-<p>Nhóm công cụ theo dõi thị trường theo thời gian thực: bảng giá các sàn, bảng chỉ số và bộ lọc cổ phiếu.</p>
-<ul>
-  <li><strong>bảng giá chứng khoán</strong> — Bảng hiển thị giá khớp, khối lượng và bước giá của các mã đang niêm yết, cập nhật trong phiên.</li>
-  <li><strong>bảng giá hose</strong> — Bảng giá của Sở Giao dịch Chứng khoán TP.HCM, nơi niêm yết phần lớn cổ phiếu vốn hoá lớn.</li>
-  <li><strong>bảng giá hnx</strong> — Bảng giá của Sở Giao dịch Chứng khoán Hà Nội, gồm cổ phiếu niêm yết HNX và thị trường UPCoM.</li>
-  <li><strong>bảng vni</strong> — Bảng theo dõi chỉ số VN-Index cùng các chỉ số thành phần của thị trường.</li>
-  <li><strong>bảng điểm chứng khoán</strong> — Cách gọi khác của bảng giá, nhấn vào phần điểm số chỉ số và biến động trong phiên.</li>
-  <li><strong>bảng giao dịch chứng khoán trực tuyến</strong> — Giao diện đặt lệnh và theo dõi danh mục trên nền tảng trực tuyến, không cần tới quầy.</li>
-  <li><strong>bộ lọc cổ phiếu</strong> — Công cụ lọc mã theo tiêu chí như ngành, vốn hoá, thanh khoản hay chỉ số tài chính.</li>
-  <li><strong>VPBankS bảng giá</strong> — Bảng giá do Chứng khoán VPBank cung cấp trên nền tảng NEO Invest.</li>
-  <li><strong>VPBankS app</strong> — Ứng dụng giao dịch NEO Invest của VPBankS trên điện thoại, dùng để đặt lệnh và quản lý danh mục.</li>
-</ul>
-<p>→ <a href="https://neoinvest.vpbanks.com.vn/">Bảng giá trực tuyến NEO Invest</a></p>
-</section>
-<section>
-<h2>Mở tài khoản và giao dịch</h2>
-<p>Các bước từ lúc mở tài khoản tới khi đặt được lệnh, và những quy tắc giao dịch cần nắm trước.</p>
-<ul>
-  <li><strong>mở tài khoản chứng khoán</strong> — Thủ tục định danh và ký hợp đồng để có mã tài khoản giao dịch tại một công ty chứng khoán.</li>
-  <li><strong>đăng ký tài khoản chứng khoán</strong> — Cách gọi khác của việc mở tài khoản, thường thực hiện trực tuyến bằng định danh điện tử.</li>
-  <li><strong>app chứng khoán</strong> — Ứng dụng di động cho phép xem bảng giá, đặt lệnh và theo dõi danh mục.</li>
-  <li><strong>cách chơi chứng khoán trên điện thoại</strong> — Quy trình đặt lệnh, theo dõi tài sản và quản lý rủi ro khi giao dịch bằng ứng dụng di động.</li>
-  <li><strong>sàn giao dịch chứng khoán</strong> — Nơi tổ chức giao dịch tập trung; tại Việt Nam gồm HOSE, HNX và thị trường UPCoM.</li>
-  <li><strong>sàn giao dịch chứng khoán online</strong> — Hình thức giao dịch qua nền tảng trực tuyến của công ty chứng khoán thay vì đặt lệnh trực tiếp.</li>
-  <li><strong>giao dịch chứng khoán</strong> — Hoạt động mua bán chứng khoán niêm yết theo quy định của pháp luật hiện hành.</li>
-  <li><strong>các phiên giao dịch chứng khoán</strong> — Phiên mở cửa, phiên liên tục và phiên đóng cửa, mỗi phiên có cách khớp lệnh riêng.</li>
-  <li><strong>lệnh mp trong chứng khoán</strong> — Lệnh thị trường, khớp ngay ở mức giá đối ứng đang có trên sàn thay vì chờ một mức giá đặt trước.</li>
-  <li><strong>margin là gì</strong> — Giao dịch ký quỹ, tức vay tiền công ty chứng khoán để mua thêm; làm tăng cả mức lãi lẫn mức lỗ.</li>
-</ul>
-<p>→ <a href="https://www.vpbanks.com.vn/trung-tam-kien-thuc/mo-tai-khoan-chung-khoan">Hướng dẫn mở tài khoản chứng khoán</a></p>
-</section>
-<section>
-<h2>Chỉ số và phân tích tài chính</h2>
-<p>Nhóm chỉ số dùng khi đọc báo cáo tài chính và so sánh doanh nghiệp.</p>
-<ul>
-  <li><strong>pe là gì</strong> — Hệ số giá trên lợi nhuận một cổ phần, cho biết nhà đầu tư trả bao nhiêu cho mỗi đồng lợi nhuận.</li>
-  <li><strong>pb là gì</strong> — Hệ số giá trên giá trị sổ sách, so sánh thị giá với giá trị tài sản ròng của doanh nghiệp.</li>
-  <li><strong>eps là gì</strong> — Lợi nhuận sau thuế phân bổ trên mỗi cổ phần đang lưu hành.</li>
-  <li><strong>roe là gì</strong> — Tỷ suất lợi nhuận trên vốn chủ sở hữu, đo hiệu quả sử dụng vốn của cổ đông.</li>
-  <li><a href="/posts/roa-la-gi.html">roa là gì</a> — Tỷ suất lợi nhuận trên tổng tài sản, đo hiệu quả sử dụng toàn bộ tài sản.</li>
-  <li><strong>ebit là gì</strong> — Lợi nhuận trước lãi vay và thuế, dùng để so sánh hiệu quả hoạt động giữa các doanh nghiệp.</li>
-  <li><strong>cách đọc báo cáo tài chính</strong> — Cách đọc bảng cân đối kế toán, báo cáo kết quả kinh doanh và báo cáo lưu chuyển tiền tệ.</li>
-  <li><strong>phân tích tài chính doanh nghiệp</strong> — Việc kết hợp các nhóm chỉ số về thanh khoản, đòn bẩy, hiệu quả và khả năng sinh lời.</li>
-  <li><strong>công thức tính gdp</strong> — Cách tính tổng sản phẩm quốc nội, một chỉ báo vĩ mô thường được tham chiếu khi đánh giá thị trường.</li>
-</ul>
-<p>→ <a href="https://www.vpbanks.com.vn/trung-tam-kien-thuc/cach-doc-bao-cao-tai-chinh">Cách đọc báo cáo tài chính</a></p>
+<h2>Sáu loại sản phẩm: khác nhau chỗ nào</h2>
+<p>Cùng gọi là chứng khoán nhưng bản chất pháp lý và mức rủi ro rất khác nhau. Bảng này gom định nghĩa nằm ở sáu bài riêng về một chỗ.</p>
+<div class="tbl"><table><thead><tr><th>Sản phẩm</th><th>Bản chất</th><th>Điểm cần lưu ý</th></tr></thead><tbody><tr><td>Cổ phiếu</td><td>Xác nhận quyền sở hữu một phần vốn của công ty cổ phần; người mua trở thành cổ đông</td><td>Lợi nhuận từ cổ tức và chênh lệch giá, kèm rủi ro mất vốn</td></tr><tr><td>Trái phiếu</td><td>Chứng khoán nợ, có mệnh giá và kỳ hạn xác định, ngày phát hành và ngày đáo hạn cụ thể</td><td>Bài gốc nhấn: lợi suất cao không đồng nghĩa với an toàn</td></tr><tr><td>Chứng chỉ quỹ</td><td>Xác nhận phần vốn góp trong quỹ đầu tư chứng khoán (Khoản 4 Điều 4 Luật Chứng khoán 2019)</td><td>Công ty quản lý quỹ chọn tài sản thay nhà đầu tư</td></tr><tr><td>ETF</td><td>Quỹ hoán đổi danh mục, mô phỏng một chỉ số tham chiếu như VN30 hay VN-Index</td><td>Giao dịch trực tiếp trên sàn như cổ phiếu; một lệnh sở hữu gián tiếp cả rổ</td></tr><tr><td>Chứng khoán phái sinh</td><td>Hợp đồng có giá trị phụ thuộc tài sản cơ sở: cổ phiếu, chỉ số, trái phiếu, hàng hoá</td><td>Cơ chế ký quỹ nên rủi ro cao hơn; giao dịch được cả khi thị trường giảm</td></tr><tr><td>Chứng quyền có bảo đảm (CW)</td><td>Chứng khoán do công ty chứng khoán phát hành, được bảo đảm bằng tài sản cơ sở</td><td>Người nắm giữ có quyền nhưng không bắt buộc thực hiện; tổ chức phát hành phải tạo lập thị trường</td></tr></tbody></table></div>
+<p><small>Nhóm dùng đòn bẩy làm tăng cả mức lãi lẫn mức lỗ. Cơ chế ký quỹ của nhóm phái sinh được giải thích trong <a href="https://www.vpbanks.com.vn/trung-tam-kien-thuc/chung-khoan-phai-sinh-la-gi">bài về chứng khoán phái sinh</a>.</small></p>
 </section>
 <section>
 <h2>Sản phẩm và kênh đầu tư</h2>
 <p>Các loại chứng khoán và hình thức đầu tư thường gặp trên thị trường Việt Nam.</p>
-<ul>
-  <li><strong>cổ phiếu</strong> — Chứng khoán xác nhận quyền sở hữu một phần vốn điều lệ của công ty cổ phần.</li>
-  <li><strong>đầu tư cổ phiếu</strong> — Hình thức nắm giữ cổ phiếu nhằm hưởng cổ tức và chênh lệch giá, kèm rủi ro mất vốn.</li>
-  <li><strong>trái phiếu</strong> — Chứng khoán nợ, trong đó tổ chức phát hành có nghĩa vụ trả lãi và hoàn gốc theo kỳ hạn đã định.</li>
-  <li><strong>chứng chỉ quỹ</strong> — Chứng khoán xác nhận phần vốn góp vào một quỹ đầu tư do công ty quản lý quỹ điều hành.</li>
-  <li><strong>etf</strong> — Quỹ hoán đổi danh mục, mô phỏng một chỉ số và được giao dịch trên sàn như cổ phiếu.</li>
-  <li><strong>chứng khoán phái sinh</strong> — Công cụ tài chính dưới dạng hợp đồng, giao dịch dựa trên biến động giá của tài sản cơ sở; đi kèm rủi ro cao do cơ chế ký quỹ.</li>
-  <li><strong>hướng dẫn chơi chứng khoán phái sinh</strong> — Giao dịch Hợp đồng tương lai chỉ số VN30 để tìm lợi nhuận từ biến động giá tài sản cơ sở mà không cần sở hữu trực tiếp.</li>
-  <li><strong>chứng quyền có bảo đảm</strong> — Loại chứng khoán cho phép kiếm lợi nhuận theo biến động giá của tài sản cơ sở như cổ phiếu, không cần bỏ vốn lớn như mua trực tiếp.</li>
-  <li><strong>ipo là gì</strong> — Lần đầu doanh nghiệp chào bán cổ phần ra công chúng để huy động vốn.</li>
-  <li><strong>đầu tư tích sản</strong> — Giải pháp đầu tư tích luỹ, giúp khách hàng xây dựng kế hoạch và tích luỹ cổ phiếu tiềm năng trong dài hạn.</li>
-  <li><strong>VNIndex</strong> — Chỉ số phản ánh xu hướng biến động chung của cổ phiếu niêm yết trên Sở Giao dịch Chứng khoán TP.HCM.</li>
-  <li><strong>bullish là gì</strong> — Trạng thái thị trường hoặc quan điểm nghiêng về chiều giá tăng.</li>
-  <li><strong>đầu tư chứng khoán</strong> — Việc phân bổ vốn vào các loại chứng khoán theo mục tiêu và khả năng chịu rủi ro của từng người.</li>
-  <li><strong>học chứng khoán</strong> — Lộ trình tìm hiểu từ khái niệm cơ bản, cách đọc bảng giá tới quản trị rủi ro danh mục.</li>
-  <li><strong>cách chơi chứng khoán</strong> — Các bước từ mở tài khoản, nạp tiền, chọn mã tới đặt lệnh và theo dõi danh mục.</li>
+<ul class="kw">
+  <li>cổ phiếu</li>
+  <li>đầu tư cổ phiếu</li>
+  <li>trái phiếu</li>
+  <li>chứng chỉ quỹ</li>
+  <li>etf</li>
+  <li>chứng khoán phái sinh</li>
+  <li>hướng dẫn chơi chứng khoán phái sinh</li>
+  <li>chứng quyền có bảo đảm</li>
+  <li>ipo là gì</li>
+  <li>đầu tư tích sản</li>
+  <li>VNIndex</li>
+  <li>bullish là gì</li>
+  <li>đầu tư chứng khoán</li>
+  <li>học chứng khoán</li>
+  <li>cách chơi chứng khoán</li>
 </ul>
-<p>→ <a href="https://www.vpbanks.com.vn/trung-tam-kien-thuc/cach-choi-chung-khoan">Trung tâm kiến thức đầu tư</a></p>
-</section>
-<section>
-<h2>Câu hỏi thường gặp về VPBankS</h2>
-<p>Thông tin nhận diện doanh nghiệp và các câu hỏi thường gặp khi tìm hiểu một công ty chứng khoán.</p>
-<ul>
-  <li><strong>VPBankS là gì</strong> — Tên viết tắt của Công ty Cổ phần Chứng khoán VPBank, thành viên hệ sinh thái tài chính VPBank.</li>
-  <li><strong>Đầu tư VPBankS</strong> — Các dịch vụ đầu tư VPBankS cung cấp: môi giới cơ sở và phái sinh, tư vấn đầu tư, quản lý tài sản.</li>
-  <li><strong>Đánh giá VPBankS</strong> — Những tiêu chí thường dùng khi tìm hiểu một công ty chứng khoán: giấy phép hoạt động, vốn điều lệ, nền tảng giao dịch và chất lượng hỗ trợ.</li>
-  <li><strong>VPBankS có tốt không</strong> — Câu trả lời tuỳ nhu cầu từng nhà đầu tư; nên đối chiếu biểu phí, sản phẩm và công cụ với mục tiêu của mình.</li>
-  <li><strong>phí giao dịch VPBankS</strong> — Biểu phí được công bố trên website chính thức và có thể thay đổi theo từng thời kỳ, nên xem bản mới nhất trước khi giao dịch.</li>
-  <li><strong>công ty chứng khoán</strong> — Tổ chức được Uỷ ban Chứng khoán Nhà nước cấp phép thực hiện môi giới, tự doanh, bảo lãnh phát hành và tư vấn đầu tư.</li>
-  <li><strong>VPX</strong> — Mã chứng khoán của Công ty Cổ phần Chứng khoán VPBank.</li>
-  <li><strong>Cổ phiếu VPX</strong> — Cổ phiếu của VPBankS, niêm yết trên Sở Giao dịch Chứng khoán TP.HCM (HoSE).</li>
-</ul>
-<p>→ <a href="https://www.vpbanks.com.vn/">Website chính thức VPBankS</a></p>
 </section>
 <h2>Bài viết (1)</h2>
 <ul>
