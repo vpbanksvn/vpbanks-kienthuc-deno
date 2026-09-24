@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vpbanks-kienthuc-deno.vpbanksvn.deno.net/sitemap.xml
