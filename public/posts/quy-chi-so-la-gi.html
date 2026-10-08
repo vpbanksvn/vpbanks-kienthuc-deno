@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Một lệnh quỹ thay cho ba mươi lệnh mua từng mã</title><meta name="description" content="Quỹ chỉ số là cách gọi một nhóm quỹ mô phỏng biến động của một chỉ số tham chiếu thay vì tự chọn từng mã. Có thể hiểu rõ khác biệt này qua một câu hỏi đếm được: để có một danh mục "><style>
+:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0;padding:32px 20px 64px;
+  font:17px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  color:#1c1e21;background:#fff}
+main,article{max-width:720px;margin:0 auto}
+h1{font-size:1.9rem;line-height:1.3;margin:0 0 .6em;font-weight:700}
+h2{font-size:1.35rem;line-height:1.35;margin:1.8em 0 .5em}
+h3{font-size:1.15rem;line-height:1.4;margin:1.8em 0 .5em}
+p{margin:0 0 1.15em}
+ul,ol{margin:0 0 1.15em;padding-left:1.4em}
+li{margin:.3em 0}
+a{color:#0b5fff;text-decoration:underline;text-underline-offset:2px}
+img{max-width:100%;height:auto;display:block;margin:1.6em auto;border-radius:8px}
+em,figcaption{color:#5b6570}
+blockquote{margin:1.4em 0;padding:.8em 1em;border-left:3px solid #d7dbe0;background:#f7f8fa}
+small{color:#5b6570}
+hr{border:0;border-top:1px solid #e6e9ec;margin:2em 0}
+table{width:100%;border-collapse:collapse;margin:1.2em 0;font-size:.94em}
+th,td{border:1px solid #e0e4e8;padding:.55em .7em;text-align:left;vertical-align:top}
+th{background:#f4f6f8;font-weight:600}
+.tbl{overflow-x:auto}
+ul.kw{columns:2;column-gap:2em;padding-left:1.2em}
+@media (max-width:600px){ul.kw{columns:1}}
+@media (max-width:600px){body{padding:20px 16px 48px;font-size:16px}h1{font-size:1.55rem}}
+@media (prefers-color-scheme:dark){
+  body{background:#15171a;color:#e6e8ea}
+  a{color:#7aa7ff}
+  blockquote{background:#1d2024;border-left-color:#333}
+  th{background:#20242a}
+  th,td{border-color:#2e3238}
+  em,figcaption,small{color:#9aa3ad}
+  hr{border-top-color:#2a2e33}
+}
+</style></head>
+<body>
+<article>
+<h1>Một lệnh quỹ thay cho ba mươi lệnh mua từng mã</h1>
+<p>Quỹ chỉ số là cách gọi một nhóm quỹ mô phỏng biến động của một chỉ số tham chiếu thay vì tự chọn từng mã. Có thể hiểu rõ khác biệt này qua một câu hỏi đếm được: để có một danh mục giống chỉ số gồm 30 cổ phiếu, người đầu tư phải thực hiện bao nhiêu thao tác và chịu những chi phí nào.</p>
+<p>Định nghĩa đầy đủ hơn nằm ở <a href="https://www.vpbanks.com.vn/trung-tam-kien-thuc/etf-la-gi">phần giải thích quỹ bám sát chỉ số của VPBankS</a>; bài này chỉ làm phép đếm thao tác.</p>
+<h3>Tự dựng một rổ ba mươi mã</h3>
+<p>VN30 là chỉ số gồm 30 cổ phiếu có vốn hoá và thanh khoản cao trên sàn HOSE, được xem xét định kỳ. Nếu muốn giữ đủ rổ này bằng tay, người đầu tư cần ít nhất 30 lệnh mua, mỗi lệnh phải tuân theo lô giao dịch và chịu phí giao dịch của công ty chứng khoán.</p>
+<p style="text-align:center;margin:18px 0"><img src="https://s3.vpbanks.com.vn/vpbanks/blobid1%20(9)" alt="quỹ chỉ số là gì - Tự dựng một rổ ba mươi mã" title="quỹ chỉ số là gì - Tự dựng một rổ ba mươi mã" style="max-width:100%;width:auto;max-height:420px;height:auto;display:inline-block;object-fit:contain;border-radius:4px"/><em style="display:block;font-size:13px;line-height:1.5;color:#666;margin-top:6px">Minh hoạ: quỹ chỉ số là gì</em></p>
+<p>Ví dụ giả định: giá trung bình mỗi cổ phiếu là 25.000 đồng, mua một lô chẵn 100 cổ phiếu cho mỗi mã thì mỗi mã cần 2.500.000 đồng và cả rổ cần 75.000.000 đồng. Lô lẻ từ 1 đến 99 cổ phiếu cho phép mua giá trị nhỏ hơn, nhưng số lệnh vẫn là 30. Thêm vào đó, rổ chia đều như vậy không trùng với chỉ số, vì các mã trong chỉ số có tỷ trọng khác nhau.</p>
+<h3>Qua quỹ chỉ số</h3>
+<p>Với <a href="https://vpbanksvn.wordpress.com/2026/10/06/giao-dich-chung-chi-quy-mo-dien-ra-theo-nhung-buoc-nao/">chứng chỉ quỹ</a> bám chỉ số, người đầu tư đặt lệnh trên một mã giao dịch, còn việc giữ rổ và điều chỉnh khi chỉ số tái cơ cấu do quỹ thực hiện. Phần việc đó không miễn phí: phí quản lý và chi phí vận hành được trừ vào tài sản quỹ và là một nguồn gây sai lệch mô phỏng, tức chênh lệch giữa biến động của quỹ và của chỉ số.</p>
+
+<p style="margin:10px 0;padding:9px 14px;background:#f0f7ff;border-left:4px solid #2563eb;border-radius:0 6px 6px 0;font-size:13px;line-height:1.5">&#128279; <strong style="color:#1e3a5f">Xem thêm:</strong> <a href="https://vpbanks-dautu.onrender.com/posts/au-tu-co-phieu.html" style="color:#2563eb;text-decoration:underline">Chi phí quản lý và cách hình thành giá khi đầu tư qua quỹ chỉ số</a></p>
+<p>Về cách giao dịch loại quỹ này trên sàn, bài <a href="https://telegra.ph/Quỹ-ETF-là-gì-Định-nghĩa-theo-luật-và-cơ-chế-hai-tầng-09-23">định nghĩa ETF theo Luật Chứng khoán và cơ chế hai tầng</a> nêu rõ phần thị trường sơ cấp và thứ cấp.</p>
+<p style="text-align:center;margin:18px 0"><img src="https://s3.vpbanks.com.vn/vpbanks/blobid2%20(9)" alt="quỹ chỉ số là gì - Qua quỹ chỉ số" title="quỹ chỉ số là gì - Qua quỹ chỉ số" style="max-width:100%;width:auto;max-height:420px;height:auto;display:inline-block;object-fit:contain;border-radius:4px"/><em style="display:block;font-size:13px;line-height:1.5;color:#666;margin-top:6px">Minh hoạ: quỹ chỉ số là gì</em></p>
+<h3>Bảng đếm hai cách làm</h3>
+<ul><li>Số lệnh ban đầu: 30 lệnh khi tự dựng rổ, một lệnh khi mua chứng chỉ quỹ.</li><li>Người điều chỉnh khi chỉ số đổi thành viên hoặc tỷ trọng: chính nhà đầu tư, hoặc quỹ.</li><li>Chi phí: phí giao dịch trên từng lệnh, hoặc phí giao dịch một lệnh cộng chi phí vận hành của quỹ.</li><li>Rủi ro: cả hai cách đều giảm giá trị khi chỉ số giảm.</li></ul><h3>Điều phép đếm không trả lời</h3>
+<p>Số thao tác ít hơn không có nghĩa là một cách tốt hơn cách kia. Phép đếm chỉ mô tả khối lượng việc phải làm; nó không nói gì về kết quả đầu tư, và quỹ cụ thể nào cũng có chỉ số tham chiếu, chi phí và rủi ro riêng cần đọc trong bản cáo bạch.</p>
+<h3>Kết luận</h3>
+<p style="text-align:center;margin:18px 0"><img src="https://s3.vpbanks.com.vn/vpbanks/blobid0%20(9)" alt="quỹ chỉ số là gì - Kết luận" title="quỹ chỉ số là gì - Kết luận" style="max-width:100%;width:auto;max-height:420px;height:auto;display:inline-block;object-fit:contain;border-radius:4px"/><em style="display:block;font-size:13px;line-height:1.5;color:#666;margin-top:6px">Minh hoạ: quỹ chỉ số là gì</em></p>
+<p>Quỹ chỉ số gom việc giữ và điều chỉnh một rổ chỉ số vào một chứng chỉ quỹ, đổi lại bằng chi phí vận hành trong quỹ và sai lệch mô phỏng. Rủi ro giảm theo chỉ số vẫn còn nguyên. Nội dung mang tính tham khảo, không phải khuyến nghị đầu tư.</p>
+
+<p>#quychiso #vn30 #chungchiquy #vpbanks</p>
+<hr>
+<p class="tohub"><small><a href="/">← VPBankS — Kiến thức đầu tư và phân tích chỉ số</a></small></p>
+</article>
+</body></html>
